@@ -8,7 +8,7 @@
   <li>
     sqlyog를 실행, query 창에
     
-      create database footprint;<br>
+      create database footprint;
       use footprint; 
     
     입력 후 실행
