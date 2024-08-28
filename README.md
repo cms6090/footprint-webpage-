@@ -8,14 +8,15 @@
   <li>
     sqlyog를 실행, query 창에
     
-      ```create database footprint;
-      use footprint;``` 
-    입력 후 실행
+      create database footprint;
+      use footprint;
+      
+  입력 후 실행
   </li>
   <li>
     <div>
       <p>카트 테이블 생성(장바구니 데이터)</p>
-      <div>
+
         DROP TABLE IF EXISTS `cart`;<br>
     
         CREATE TABLE `cart` (
@@ -28,14 +29,13 @@
           `text` varchar(50) NOT NULL,
           PRIMARY KEY (`email`,`name`,`size`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-      </div>
-    </div>
+        
+  </div>
   </li>
   <li>
     <div>
       <p>멤버 테이블 생성(회원 데이터)</p>
       
-      <div>
         DROP TABLE IF EXISTS `member`;<br>
     
         CREATE TABLE `member` (
@@ -46,14 +46,12 @@
           `regdate` date NOT NULL,
           PRIMARY KEY (`email`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;<br>
-      </div>
-    </div>
+  </div>
   </li>
   <li>
     <div>
       <p>주문 테이블 생성(주문 데이터)</p>
       
-      <div>
         DROP TABLE IF EXISTS `orders`;<br>
     
         CREATE TABLE `orders` (
@@ -70,14 +68,12 @@
           `brand` varchar(20) NOT NULL,
           PRIMARY KEY (`ordno`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-      </div>
-    </div>
+  </div>
   </li>
   <li>
     <div>
       <p>제품 테이블 생성(제품 데이터)</p>
       
-      <div>
         DROP TABLE IF EXISTS `product`;<br>
   
         CREATE TABLE `product` (
@@ -89,14 +85,12 @@
           `purcnt` int(5) DEFAULT NULL,
           PRIMARY KEY (`name`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-      </div>
-    </div>
+  </div>
 </li>
 <li>
   <div>
       <p>제품 데이터 입력</p>
     
-      <div>
         insert  into `product`(`name`,`brand`,`text`,`price`,`images`,`purcnt`) values 
         ('(W) Jordan 1 x Travis Scott Retro Low OG SP Canary','Jordan','(W) 조던 1 x 트래비스 스캇 레트로 로우 OG SP 카나리','380,000원','images/top1.jpg',0),
         ('Asics Gel-Kayano 14 Cream Black','Asics','아식스 젤 카야노 14 크림 블랙','265,000원','images/top9.jpg',1),
@@ -110,7 +104,7 @@
         ('Nike V2K Run Pure Platinum Wolf Grey','Nike','나이키 V2K 런 퓨어 플래티넘 울프 그레이','116,000원','images/top3.jpg',3),
         ('Nike V2K Run Summit White Metallic Silver','Nike','나이키 V2K 런 서밋 화이트 메탈릭 실버','96,000원','images/top10.jpg',0),
         ('Nike x Bode Astrograbber SP Black and Coconut Milk','Nike','나이키 x 보디 아스트로그래버 SP 블랙 앤 코코넛 밀크','649,000원','images/top11.jpg',0);
-      </div>
-    </div>
+  </div>
   </li>
+  <li>해당 파일들을 C:\xampp\htdocs에 옮긴 후 주소창에 localhost/폴더이름/index.php를 입력</li>
 </ol>
