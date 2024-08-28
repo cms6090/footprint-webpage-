@@ -7,10 +7,10 @@
   <li>xampp control panel을 실행시켜 Apache, MySQL을 Start</li>
   <li>
     sqlyog를 실행, query 창에
-    <div>
+    
       create database footprint;<br>
       use footprint; 
-    </div>
+    
     입력 후 실행
   </li>
   <li>
